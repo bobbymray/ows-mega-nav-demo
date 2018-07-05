@@ -1,0 +1,199 @@
+html, body {
+  color: #272727;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-bottom: 10rem; }
+
+header {
+  border-bottom: 1px solid darkgray;
+  padding: 1rem;
+  position: relative; }
+  header * {
+    margin: 0;
+    padding: 0; }
+  header h1 {
+    font-size: 38px;
+    line-height: 1; }
+  header [class^="icon"] {
+    height: 40px;
+    width: 40px; }
+  header img {
+    width: 100%; }
+  header li {
+        /*
+        & > a:first-child,
+        span:first-child,
+        span:nth-child(2) {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        span:last-child {
+            display: block;
+            color: $c-nav-hilite;
+            clear: both;
+            font-size: 98%;
+            line-height: 1.5;
+            padding-top: .4rem;
+
+            a {
+                border-bottom: 1px solid;
+                display: inline-block;
+            }
+        }
+        */ }
+    header li a {
+      color: currentColor;
+      text-decoration: none; }
+
+h1 {
+  font-family: "Anton", sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+button {
+  background: none;
+  border: none; }
+
+.nav-mega li {
+  padding: .8rem .5rem; }
+.nav-mega span {
+  display: block;
+  font-size: .9rem; }
+  .nav-mega span:first-child, .nav-mega span:nth-child(2) {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+  .nav-mega span:nth-child(2) {
+    color: dimgray;
+    font-size: .7rem;
+    margin: .2rem 0 .5rem; }
+  .nav-mega span:nth-child(3) {
+    color: dimgray;
+    line-height: 1.5;
+    text-align: center; }
+    .nav-mega span:nth-child(3) a {
+      font-weight: bold;
+      letter-spacing: .5px; }
+      .nav-mega span:nth-child(3) a:hover, .nav-mega span:nth-child(3) a:focus {
+        background-color: #272727;
+        color: white; }
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+  nav {
+    background-color: inherit;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-100%); }
+
+  .show-nav {
+    transition: transform .1s ease;
+    transform: translateX(0); }
+
+  .nav-list {
+    border-bottom: 1px dotted darkgray;
+    display: flex;
+    justify-content: space-between; }
+
+  .has-mega {
+    border-top: 1px solid darkgray;
+    flex: 0 0 50%; }
+    .has-mega > a {
+      border-bottom: 1px dotted darkgray;
+      display: block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: .5rem 0 .4rem;
+      text-align: center;
+      text-transform: uppercase; }
+    .has-mega:last-child {
+      background-color: whitesmoke;
+      border-left: 1px dotted darkgray; }
+
+  .nav-mega li {
+    border-bottom: 1px dotted darkgray; }
+
+  .nav-mega-desc {
+    border-bottom: 1px dotted darkgray;
+    display: block;
+    font-size: .95rem;
+    padding: .8rem .5rem;
+    text-align: center; } }
+@media screen and (min-width: 769px) {
+  header .icon-menu {
+    display: none; }
+  header .icon-search,
+  header .icon-cart {
+    position: absolute;
+    top: 1rem; }
+  header .icon-search {
+    right: 4rem; }
+  header .icon-cart {
+    right: 1rem; }
+
+  nav {
+    margin-top: .5rem;
+    position: relative; }
+
+  .has-mega {
+    display: inline-block; }
+    .has-mega .nav-mega-wrap {
+      background-color: white;
+      border: 1px solid darkgray;
+      border-radius: 6px;
+      display: none;
+      padding: .5rem;
+      position: absolute;
+      left: 0;
+      right: 0; }
+    .has-mega .nav-mega-desc {
+      display: block;
+      font-size: 1.1rem;
+      margin: 1rem; }
+    .has-mega .nav-mega {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .has-mega .nav-mega li {
+        flex: 0 0 300px;
+        margin: .2rem 0; }
+    .has-mega:hover .nav-mega-wrap, .has-mega:focus .nav-mega-wrap {
+      display: block; }
+    .has-mega:hover .nav-mega-section::before, .has-mega:focus .nav-mega-section::before {
+      border-bottom: 10px solid #494949;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1; }
+    .has-mega .nav-mega-section {
+      display: block;
+      font-weight: bold;
+      padding: 1rem 1rem 10px;
+      position: relative;
+      text-transform: uppercase; } }
+
+/*# sourceMappingURL=main.css.map */
